@@ -1,8 +1,0 @@
---no-private
---protected
-lib/vagrant-proxyconf/config/key_mixin.rb
-lib/**/*.rb
--
-CHANGELOG.md
-LICENSE.txt
-README.md
