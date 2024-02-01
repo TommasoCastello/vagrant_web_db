@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebebeb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+main {
+    margin: 50px auto 0 auto;
+    width: 600px;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 20px rgba(43, 43, 43, 0.2);
+}
+/* table todo */
+
+main h1 {
+    margin-bottom: 8px;
+}
+
+main table {
+    border-collapse: collapse;
+}
+
+main table {
+    width: 100%;
+}
+
+main table th,
+main table td {
+    padding: 16px 4px;
+}
+
+main table th {
+    text-align: left;
+}
+
+main table td {
+    font-size: 14px;
+}
+
+main table>tbody tr:nth-child(odd) {
+    background-color: #ebebeb;
+}
+
+main table>tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+main table>tbody td:first-child {
+    width: 20%; 
+}
+
+main table>tbody td:nth-child(0) {
+    width: 60%; 
+}
+
+main table>tbody td:last-child {
+   width: 20%; 
+   text-align: center;
+}
+
+main table>tbody td:not(:last-child) {
+    border-right: 1px solid #cdcdcd;
+}
+
+main a.add_todo:link {
+    margin-bottom: 32px;
+}
+
+main a.add_todo:link,
+main a.add_todo:visited,
+main table>tbody td a:link,
+main table>tbody td a:visited {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #255fff;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+main a.add_todo:hover,
+main a.add_todo:active,
+main table>tbody td a:hover,
+main table>tbody td a:active {
+    background-color: #1e51de;
+}
+
+
+/* todo */
+
+main label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+main div:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+main div:last-child{
+    border-top: 1px solid #ebebeb;
+    padding-top: 12px;
+}
+
+main div textarea {
+    width: 100%;
+    min-height: 80px;
+    resize: vertical;
+}
+
+main div textarea,
+main div input {
+    border: 1px solid #aaa;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+
+main div:last-child button {
+    padding: 8px 16px;
+    background-color: #255fff;
+    border: 0;
+    color: #fff;
+    border-radius: 4px;
+    font-size: inherit;
+    transition: background-color 0.2s ease-in-out;
+}
+
+main div:last-child button:hover {
+    cursor: pointer;
+    background-color: #1e51de;
+}
+
+main div:last-child a:link,
+main div:last-child a:visited {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 8px;
+}
+
+main div:last-child a:hover,
+main div:last-child a:active {
+    text-decoration: underline;
+}
+
+/* detail */
+main div p {
+    margin: 0;
+}
+
+main div:last-child a.delete:link,
+main div:last-child a.delete:visited {
+    display: inline-block;
+    margin: 0;
+    padding: 8px 16px;
+    background-color: #e41f1f;
+    border: 0;
+    color: #fff;
+    border-radius: 4px;
+    font-size: inherit;
+    transition: background-color 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+main div:last-child a.delete:hover,
+main div:last-child a.delete:active {
+    background-color: #c41b1b;
+}
